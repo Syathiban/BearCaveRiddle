@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Anchor" fx:id="topbar" prefHeight="276.0" prefWidth="517.0" style="-fx-background-color: #054950;" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BearCave.GewinnerController">
+   <children>
+      <Label alignment="CENTER" layoutX="74.0" layoutY="71.0" prefHeight="35.0" prefWidth="367.0" text="You solved the Riddle!" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="30.0" />
+         </font>
+      </Label>
+      <Button id="buttongeilo" fx:id="buttongeilo" layoutX="146.0" layoutY="191.0" mnemonicParsing="false" onAction="#restart1" prefHeight="26.0" prefWidth="224.0" style="-fx-background-color: FFE761;" styleClass="button-submit" text="OK">
+         <font>
+            <Font name="Eras Bold ITC" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
