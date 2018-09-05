@@ -63,26 +63,26 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void handleButtonAction(ActionEvent event) throws IOException {
-    try {
-        eingabe1 = Integer.parseInt(text1.getText());
-        eingabe2 = Integer.parseInt(text2.getText());
-        if (eingabe1 == baeren && eingabe2 == hoehlen) {
-            Stage stage = Model.getStage();
-            Parent root = FXMLLoader.load(getClass().getResource("Gewinner.fxml"));
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.setResizable(false);
-            stage.show();
-        } else {
-            Stage stage = Model.getStage();
-            Parent root = FXMLLoader.load(getClass().getResource("Verlierer.fxml"));
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.setResizable(false);
-            stage.show();
-        }
+        try {
+            eingabe1 = Integer.parseInt(text1.getText());
+            eingabe2 = Integer.parseInt(text2.getText());
+            if (eingabe1 == baeren && eingabe2 == hoehlen) {
+                Stage stage = Model.getStage();
+                Parent root = FXMLLoader.load(getClass().getResource("Gewinner.fxml"));
+                Scene scene = new Scene(root);
+                stage.setScene(scene);
+                stage.setResizable(false);
+                stage.show();
+            } else {
+                Stage stage = Model.getStage();
+                Parent root = FXMLLoader.load(getClass().getResource("Verlierer.fxml"));
+                Scene scene = new Scene(root);
+                stage.setScene(scene);
+                stage.setResizable(false);
+                stage.show();
+            }
         } catch (Exception e) {
-        JOptionPane.showMessageDialog(null, "Incorrect input made");
+            JOptionPane.showMessageDialog(null, "Incorrect input made");
         }
 
     }
