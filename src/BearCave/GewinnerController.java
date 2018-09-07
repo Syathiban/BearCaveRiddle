@@ -38,9 +38,7 @@ public class GewinnerController implements Initializable {
     private Button buttongeilo;
     @FXML
     private AnchorPane topbar;
-
     private double xOffset = 0;
-
     private double yOffset = 0;
 
     @FXML
@@ -67,7 +65,6 @@ public class GewinnerController implements Initializable {
                 xOffset = event.getSceneX();
                 yOffset = event.getSceneY();
             }
-
         });
 
         topbar.setOnMouseDragged(new EventHandler<MouseEvent>() {
@@ -77,7 +74,6 @@ public class GewinnerController implements Initializable {
                 stage.setY(event.getScreenY() - yOffset);
             }
         });
-
     }
 
     private void close(ActionEvent event) {
