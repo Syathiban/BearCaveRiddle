@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Anchor" fx:id="Anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="553.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BearCave.FXMLDocumentController">
+   <children>
+      <ImageView fx:id="topbar" fitHeight="390.0" fitWidth="554.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@bear.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="174.0" layoutY="62.0" prefHeight="28.0" prefWidth="222.0" text="Bears in a Cave" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="185.0" layoutY="123.0" prefHeight="28.0" prefWidth="200.0" spacing="25.0" style="-fx-background-color: #FFE761;" styleClass="button-submit" stylesheets="@../../../Franzoesisch/src/franzoesisch/stylesheet.css">
+         <children>
+            <Label id="Würfel1" fx:id="Würfel1" text="1" textFill="#343131">
+               <font>
+                  <Font name="Eras Bold ITC" size="12.0" />
+               </font></Label>
+            <Label id="Würfel2" fx:id="Würfel2" prefHeight="18.0" prefWidth="8.0" text="3" textFill="#343131">
+               <font>
+                  <Font name="Eras Bold ITC" size="12.0" />
+               </font></Label>
+            <Label id="Würfel3" fx:id="Würfel3" text="2" textFill="#343131">
+               <font>
+                  <Font name="Eras Bold ITC" size="12.0" />
+               </font></Label>
+            <Label id="Würfel4" fx:id="Würfel4" text="4" textFill="#343131">
+               <font>
+                  <Font name="Eras Bold ITC" size="12.0" />
+               </font></Label>
+            <Label id="Würfel5" fx:id="Würfel5" text="5" textFill="#343131">
+               <font>
+                  <Font name="Eras Bold ITC" size="12.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <TextField id="text2" fx:id="text2" alignment="CENTER" layoutX="185.0" layoutY="204.0" prefHeight="28.0" prefWidth="200.0" promptText="Caves" style="-fx-background-color: white;" stylesheets="@stylesheet.css">
+         <font>
+            <Font name="Eras Bold ITC" size="12.0" />
+         </font></TextField>
+      <TextField id="text1" fx:id="text1" alignment="CENTER" layoutX="185.0" layoutY="170.0" prefHeight="28.0" prefWidth="200.0" promptText="Bears" style="-fx-background-color: white;" stylesheets="@stylesheet.css">
+         <font>
+            <Font name="Eras Bold ITC" size="12.0" />
+         </font></TextField>
+      <Label id="wish" fx:id="wish" alignment="CENTER" layoutX="185.0" layoutY="239.0" prefHeight="26.0" prefWidth="200.0" stylesheets="@stylesheet.css" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="16.0" />
+         </font></Label>
+      <Button id="Button" fx:id="Button" alignment="BOTTOM_CENTER" layoutX="186.0" layoutY="266.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="28.0" prefWidth="200.0" style="-fx-background-color: #054950;" styleClass="button-submit" stylesheets="@stylesheet.css" text="Submit" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Eras Bold ITC" size="14.0" />
+         </font></Button>
+      <Button id="Button" fx:id="restart" alignment="BOTTOM_CENTER" layoutX="186.0" layoutY="300.0" mnemonicParsing="false" onAction="#restart" prefHeight="28.0" prefWidth="200.0" style="-fx-background-color: #054950;" styleClass="button-submit" stylesheets="@stylesheet.css" text="Restart" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Eras Bold ITC" size="14.0" />
+         </font>
+      </Button>
+      <HBox alignment="CENTER_RIGHT" layoutX="475.0" layoutY="-1.0" prefHeight="30.0" prefWidth="77.0" spacing="5.0">
+         <children>
+            <Button ellipsisString="" focusTraversable="false" mnemonicParsing="false" prefHeight="17.0" prefWidth="17.0" styleClass="apple-maximize">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@../../../Franzoesisch/src/franzoesisch/stylesheet.css" />
+                  <URL value="@stylesheet.css" />
+               </stylesheets>
+            </Button>
+            <Button ellipsisString="" focusTraversable="false" mnemonicParsing="false" onAction="#minimize" prefHeight="17.0" prefWidth="17.0" styleClass="apple-minimize" stylesheets="@stylesheet.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </Button>
+            <Button ellipsisString="" focusTraversable="false" mnemonicParsing="false" onAction="#close" prefHeight="17.0" prefWidth="17.0" styleClass="apple-close" stylesheets="@stylesheet.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets right="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
